@@ -1,0 +1,224 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::index::</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+  
+</head>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+  <a class="navbar-brand" href="#">Nizampatnam Anjana</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class='ml-auto collapse navbar-collapse' id="collapsibleNavbar">
+    <ul class="navbar-nav navbar-right ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Education">Education</a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#M1">More</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#m2">Contact</a>
+      </li>
+        
+    </ul>
+  </div>  
+</nav>
+
+<body data-spy="scroll" data-target=".navbar">
+  
+<div class="jumbotron bg-dark text-white text-center" id='j1'>
+  <h1 class="display-6" >Hello!! I'm Anjana</h1>
+  <hr class="my-6">
+  <p >A Computer Science undergrad , passionate about programming and design. </p>
+  <hr>
+
+</div>
+
+
+<div class="container-lg"   id="About">
+  <p><h2 style="text-align: center;">ABOUT ME</h2></p>
+  <br>
+  
+  <div class="row justify-content-around ">
+  
+  <div class="col-3 col-md-2 col-sm-1">
+     
+    <img class="img-fluid" src="{% static 'images/i1.jpg' %}"  alt="photo" style="border-radius: 50%">
+  </div>
+
+  <div class="col-9 col-md-8 col-sm-6 ">
+    <blockquote class="blockquote">
+    <p class="mb-0">My name is Anjana Kumari.</p><p class="mb-0">I'm currently pursuing My bachelor's degree in ComputerScience discipline at Vasireddy Venkatadri Institute Of Technology(VVIT) Guntur,AndhraPradesh.</p>
+    <p class="mb-0">I love singing and  listening music.It helps me forget all my daily problems. And listening to music makes me feel relax and calm on my busy day.I believe music takes away all the stress from our mind and also keeps it fresh to absorb the new content.  </p>
+  </blockquote></div>
+</div>
+
+</div>
+
+
+<div class="container-lg"   id="Projects">
+  <h3><blockquote><p class="mb-0" style="text-align: center;text-decoration:none; font:caption;font-size: 120%;color: #262626">What i did</p></blockquote></h3>
+  <br>
+  <div class="row" style="height:100%;">
+  <div class="col-sm-6 w-50 p-3">
+    <div class="card projectcard" >
+  <img class="img-fluid rounded mx-auto d-block img2" src="{% static 'images/hangman.png' %}" alt="photo">
+  <div class="card-body">
+    <h5 class="card-title">THE HANGMAN</h5>
+    <p>A popular and fun filled word guessing game ,developed using python's "pygame" module  </p>
+    <a href="https://github.com/Anu910/The-Hangman/tree/master" ><h5><i class="fab fa-github" >Git-Hub</i></h5></a>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-6 w-50 p-3">
+    <div class="card projectcard ">
+  <img class="img-fluid rounded mx-auto d-block img2" src="{% static 'images/project-image.jpg' %}" alt="photo">
+  <div class="card-body">
+    <h5 class="card-title">Coming soon</h5>
+    <p class="card-text">This time I'm gonna choose..don't know but definitely a good one!:)</p>
+    <a href="#" ><h5><i class="fab fa-github" >Git-Hub</i></h5></a>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="container-lg "  id="Skills">
+  <br>
+  <br>
+  <br>
+  <h3><blockquote><p class="mb-0" style="text-align: center;text-decoration:none; font:caption;font-size: 120%;color: #40bf80">What i Know</p></blockquote></h3>
+  <br>
+    <img src="{% static 'images/skill.png' %}" alt="photo" id="skill">
+  
+  
+</div>
+<div  class="container-lg" id="Education">
+  <br>
+  <br><br>
+  <h3><blockquote><p class="mb-0" style="text-align: center;text-decoration: none ; font:caption;font-size: 120%;color: #262626">Where i studied</p></blockquote></h3>
+ 
+<div class="container-lg">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card ">
+                <div class="card-body">
+                    <!-- <h6 class="card-title">Timeline</h6> -->
+                    <div id="content">
+                        <ul class="timeline">
+                          <li class="event" data-date="2018-2022">
+                                <h3>Engineering</h3>
+                                <p >Currently studying pre-final year and My runnning cgpa is 8.98</p>
+                            </li>
+                            
+                            <li class="event" data-date="2016-2018">
+                                <h3>HSC</h3>
+                                <p >Successfully completed my highersecondary education with percentage of 97.3.</p>
+                                <p>Qualified JointEntranceExam</p>
+                            </li>
+                            <li class="event" data-date="2015-2016">
+                                <h3>SSC</h3>
+                                <p >Completed My tenth class with a cgpa of 9.5</p>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="jumbotron" style="background-color: white;height: 100vh;" id="M1">
+  <h3><blockquote><p class="mb-0" style="text-align: center;text-decoration: none ; font:caption;font-size: 120%;color: #262626">More about me</p></blockquote></h3>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-2"></div>
+<div class="col-3 " >
+  <h2>STRENGTHS</h2>
+  <br>
+  <ul class="list-unstyled">
+    <li>
+      <ul>
+    <li><p class="mb-0">Hard Working</p></li>
+    <li><p class="mb-0">Multi Tasking</p></li>
+    <li><p class="mb-0">Active Team Player</p></li>
+    <li><p class="mb-0">LeaderShip Skills</p></li>
+    </li>
+    </ul>
+  </ul>
+</div>
+
+<hr >
+
+
+<div class="col-2 ">
+  <img src="{% static 'images/resume.png' %}" style="height: 30%;width: 20%;border-radius: 15px;">
+  <p><a href="#">Download My Resume</a></p>
+</div>
+<div class="col-2"></div>
+</div>
+</div> 
+
+<footer class="main-footer " id="m2">
+  <div class="row justify-content-center row-cols-4">
+  <div class="clearfix col-4">
+    <ul class="details">
+      <li><i class='fas fa-envelope-square' style='font-size:24px'></i>nanjana910@gmail.com</li>
+      <li><i class='fas fa-phone-square' style='font-size:24px'></i>+91-8309798118</li>
+      <li><i style='font-size:24px' class='fas'>&#xf3c5;</i>Vijaywada,AndhraPradesh</li>
+    </ul>
+  </div>
+  <div class="col-4 clearfix"></div>
+  <ul class="social">
+    
+    <li><a href="#"><i class="fab fa-twitter" style="font-size:36px"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/nizampatnam-anjana-kumari-9a20721a9/"><i class="fab fa-linkedin-square " style="font-size:36px"></i></a></li>
+    <li><a href="#"><i class="fab fa-google-plus-official  " style="font-size:36px"></i></a></li>
+    <li><a href="#"><i class="fab fa-github-square " style="font-size:36px"></i></a></li>
+    <li><a href="#"><i class="fab fa-facebook-square " style="font-size:36px"></i></a></li>
+
+    
+
+    
+  </ul>
+    <div class="copy-write">
+      <p> anjananizampatnam &copy; 2020</p>
+    </div>
+  </div>  
+  </footer> 
+
+</body>
+</html>
